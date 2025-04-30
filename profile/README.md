@@ -1,12 +1,57 @@
-## Hi there 👋
 
-<!--
+## 🗂 ERD
+![Image](https://github.com/user-attachments/assets/e921ca8e-86ff-4ef9-a769-22c20bdd052f)
 
-**Here are some ideas to get you started:**
+## 🍀 Swagger - [URL](https://jk-project.site/swagger-ui/index.html)
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+## 🏦 Architecture
+
+## ❔ 파트별 질문 3가지
+### 🌟 FE 🌟
+1️⃣
+**질문내용**
+
+상세 설명 어쩌구 저쩌구
+
+2️⃣
+**질문내용**
+
+상세 설명 어쩌구 저쩌구
+
+3️⃣
+**질문내용**
+
+상세 설명 어쩌구 저쩌구
+
+---
+
+### 🌟 BE 🌟
+
+1️⃣
+**Java 기반의 Spring Boot 애플리케이션에서 메일 전송과 같은 I/O 중심 작업을 비동기 처리할 때, Java 17에서는 `@Async`나 `CompletableFuture`와 같은 방식이 일반적으로 사용되고, Java 21부터는 Virtual Thread를 활용한 새로운 접근이 가능해졌다고 알고 있습니다. 이러한 비동기 처리 방식을 선택할 때 어떤 기준으로 판단하시는지 궁금합니다.**
+
+현재 프로젝트에서는 Java 17을 사용하고 있어 `@Async` 기반으로 메일 전송을 비동기 처리하려고 하는데, 추후 Java 21로 업그레이드하게 된다면 Virtual Thread를 고려할 수 있을 것 같습니다. Virtual Thread는 스레드 리소스를 아끼고 구조적 동시성 등에서 이점이 있다고 들었지만, 아직 실무에서 일반화되진 않은 것 같아 고민이 됩니다. 실제로 Virtual Thread 기반 비동기 처리를 도입해보신 경험이 있으시다면, 병렬 처리 성능이나 디버깅/트러블슈팅 측면에서 어떤 장단점이 있었는지 듣고 싶습니다.
+
+
+2️⃣
+**질문내용**
+
+상세 설명 어쩌구 저쩌구
+
+
+3️⃣
+**질문내용**
+
+상세 설명 어쩌구 저쩌구
+
+</aside>
+
++) 배포 시 시간 단축을 위한 멀티스테이지 빌드, 레이어 캐싱 전략 등 실무에서 효과적인 최적화 사례?
+
++) 운영 환경에서 안정적인 배포를 위해 일반적으로 어떤 무중단 배포나 롤백 전략을 적용하고 있는지
+
++) Redis 캐시와 RDBMS 간 데이터 불일치가 발생했을 때 실무에서는 어떤 식으로 대응하고 계신지
+
+- 휴대폰 인증 여부가 Redis에만 있고 DB에는 저장되지 않는 경우, Redis TTL 만료나 예외적인 오류가 발생하면 검증이 누락될 수 있습니다. 이런 문제를 방지하기 위한 fallback 설계나, 캐시 일관성 유지 전략이 있다면 공유 부탁드립니다.
+
++) SMS 인증 로직이나 이메일 전송 같은 단발성 이벤트 처리에서 AWS Lambda 또는 SQS 기반 아키텍처로 전환했을 때의 이점과 도전 과제는 무엇인지
