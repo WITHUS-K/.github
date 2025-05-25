@@ -1,69 +1,19 @@
+## 🍀 개발자
+### 🌆 FE Developer 
+| 이채원 | 서유빈 |
+| --- | --- |
+| <p align="center"><img src="https://avatars.githubusercontent.com/cindy-chaewon" width="100" height="100" style="border-radius: 5%;"></p><p align="center"><a href="https://github.com/cindy-chaewon"><img src="https://img.shields.io/badge/cindy-chaewon-181717?style=for-the-social&logo=github&logoColor=white"/></a></p> | <p align="center"><img src="https://avatars.githubusercontent.com/alwubin" width="100" height="100" style="border-radius: 5%;"></p><p align="center"><a href="https://github.com/alwubin"><img src="https://img.shields.io/badge/alwubin-181717?style=for-the-social&logo=github&logoColor=white"/></a></p> |
 
-## 🗂 ERD
-![Image](https://github.com/user-attachments/assets/e921ca8e-86ff-4ef9-a769-22c20bdd052f)
+### 🌃 BE Developer 
+| 김재관 | 우은진 |
+| --- | --- |
+| <p align="center"><img src="https://avatars.githubusercontent.com/KJaeKwan" width="100" height="100" style="border-radius: 5%;"></p><p align="center"><a href="https://github.com/KJaeKwan"><img src="https://img.shields.io/badge/KJaeKwan-181717?style=for-the-social&logo=github&logoColor=white"/></a></p> | <p align="center"><img src="https://avatars.githubusercontent.com/EunjinWoo" width="100" height="100" style="border-radius: 5%;"></p><p align="center"><a href="https://github.com/EunjinWoo"><img src="https://img.shields.io/badge/EunjinWoo-181717?style=for-the-social&logo=github&logoColor=white"/></a></p> |
+
+## 🗂 ERD - [자세히 보기](https://www.erdcloud.com/d/53shEr4XF7kryRDSa)
+![WITHUS_ERD](https://github.com/user-attachments/assets/f3010820-6977-4433-b1b0-f36370d50b47)
+
 
 ## 🍀 Swagger - [URL](https://jk-project.site/swagger-ui/index.html)
 
 ## 🏦 Architecture
 ![Image](https://github.com/user-attachments/assets/b26062be-9638-4d94-9dd5-fae70672fa9b)
-
-## ❔ 파트별 질문 3가지
-### 🌟 FE 🌟
-1️⃣
-**질문내용**
-
-현재 회원가입은 ‘사용자’와 ‘관리자’ 유형에 따라 Step3 단계의 입력 항목이 다르게 렌더링됩니다.
-실무에서는 이런 분기 로직이 복잡해질 때 어떻게 UI 분리 및 로직 관리를 하시나요?
-예를 들어, 같은 Step 컴포넌트 안에서 분기 처리하는 게 나을지, 별도의 route나 컴포넌트로 완전히 분리하는 게 나은지 판단 기준이 궁금합니다.
-
-2️⃣
-**질문내용**
-
-현재 app/(modal)/...과 .@modal/을 활용하여 복잡한 모달(예: 동아리 검색 모달)을 구성하고 있는데요,
-Intercepting Routes를 모달로 활용하는 방식은 성능, 사용자 경험, 접근성 측면에서 괜찮은 선택인지 궁금합니다.
-현업에서는 모달을 라우팅 기반으로 관리할지, Zustand나 Context 기반으로 관리할지 어떤 기준으로 선택하시는지 궁금합니다.
-
-3️⃣
-**질문내용**
-
-현재 Next.js App Router 환경에서 서버 컴포넌트를 도입 중인데요, 데이터 패칭 최적화에는 확실한 장점이 있지만, 클라이언트 컴포넌트와의 분리 및 결합 구조, 상태 관리, UI 인터렉션 측면에서 개발하는데 난이도가 있다고 느끼고 있습니다. 실무에서는 페이지 vs 재사용 컴포넌트 vs 로직 분리 ..등과 같이 어떤 기준으로 서버 컴포넌트를 사용할지 판단하시는지, 클라이언트 컴포넌트와 혼합되는 부분의 관리 전략에 대해 궁금합니다.
-
----
-
-### 🌟 BE 🌟
-
-1️⃣
-**Java 기반의 Spring Boot 애플리케이션에서 메일 전송과 같은 I/O 중심 작업을 비동기 처리할 때, Java 17에서는 `@Async`나 `CompletableFuture`와 같은 방식이 일반적으로 사용되고, Java 21부터는 Virtual Thread를 활용한 새로운 접근이 가능해졌다고 알고 있습니다. 이러한 비동기 처리 방식을 선택할 때 어떤 기준으로 판단하시는지 궁금합니다.**
-
-현재 프로젝트에서는 Java 17을 사용하고 있어 `@Async` 기반으로 메일 전송을 비동기 처리하려고 하는데, 추후 Java 21로 업그레이드하게 된다면 Virtual Thread를 고려할 수 있을 것 같습니다. Virtual Thread는 스레드 리소스를 아끼고 구조적 동시성 등에서 이점이 있다고 들었지만, 아직 실무에서 일반화되진 않은 것 같아 고민이 됩니다. 실제로 Virtual Thread 기반 비동기 처리를 도입해보신 경험이 있으시다면, 병렬 처리 성능이나 디버깅/트러블슈팅 측면에서 어떤 장단점이 있었는지 듣고 싶습니다.
-
-
-2️⃣
-**아키텍처 설계**
-
-현재 비용 절감, 경험 부족의 이유로 NCP 단일 서버에서 Spring, Redis 등을 Docker Compose로 구성하여 운영하고 있습니다. 
-
-서버 1대로 운영하다 보니 트래픽 증가 등 장애 상황에 대한 불안감이 있지만 지금 수준에서 그 정도 트래픽이 들어오지 않는 상황이니 금전적인 투자를 하며 다중 서버 환경을 만드는 것에 대한 부담이 있습니다. 고가용성을 고려했을 때 단일 서버 환경에서 어떤 리스크가 있는지, 향후 트래픽 증가에 대비하기 위해서는 로드밸런서 도입 및 서버 다중화가 꼭 필요한 과정인지 궁금합니다. 
-
-맨토님이 생각하시기에 위 내용이 필수적인지, 필수적이라면 점진적으로 적용하는 현실적인 방법, 경험이 있다면 조언받고 싶습니다. 아키텍처 전반에 대한 피드백, 수정 사항도 주시면 감사하겠습니다!
-
-3️⃣
-**단발성 이벤트 처리에서 비동기 구현 vs AWS 서비스 활용**
-
-현재 문자 인증(SMS)과 이메일 전송 기능을 Spring Boot 애플리케이션 내에서 `@Async` 등을 활용한 자체 비동기 처리로 분리하려고 고려 중이었습니다.
-
-하지만 AWS 환경에서는 Lambda, SNS, SQS, SES 등 이미 완성도 높은 이벤트 기반 서비스들이 존재한다는 것을 알게 되어, 내부적으로 직접 비동기 구조를 구현하는 것과 AWS의 Managed 서비스를 활용하는 것 사이에서 어떤 선택이 더 바람직할지 고민이 됩니다.
-
-예를 들어, 단순한 인증번호 전송이나 알림 이메일 같은 단발성 이벤트를 처리할 때
-
-- 자체 비동기 처리(`@Async`)의 유연성과 제어권
-- AWS SNS/SQS/Lambda 기반 구조의 안정성, 비용, 확장성
-    
-    이 사이에서 실무에서는 어떤 기준으로 선택하시고, 실제 전환이나 운영에서 겪은 장단점이 있다면 공유해주시면 감사하겠습니다.
-    
-
-특히, Spring 기반의 기존 시스템에서 AWS SNS나 Lambda를 연동하여 메일/문자 전송을 처리하셨던 경험이 있으시다면, 연동 난이도나 모니터링, 장애 대응 측면에서 실질적인 조언을 듣고 싶습니다.
-
-➕ **테스트 코드**
-- 테스트 코드를 작성해봤지만 단위 테스트에 대해서만 경험이 있습니다. 실무에서 단위 테스트의 커버리지를 중요하게 생각하는지, 단위 테스트보단 통합 테스트에 중점을 두는지, 둘 다 중요한지 궁금합니다.
-- 현재 단위 테스트를 진행할 때 커버리지를 중요하게 생각하기 보단 service, controller layer의 주요 비즈니스 로직의 단위 테스트만 실행하여도 충분하다고 생각하는데 이에 대해 어떻게 생각하시는지 궁금합니다. 
